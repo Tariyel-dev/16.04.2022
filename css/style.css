@@ -1,0 +1,513 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.header .boxes .logo {
+    width: 15%;
+}
+
+.header .boxes .menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.header .boxes .menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 40px 20px;
+    display: block;
+}
+
+.header .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;  
+    align-items: center;
+}
+
+.header .menu {
+    width: 80%;
+
+}
+
+.sectionOne {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.sectionOne .box-text h3{
+    font-weight: lighter;
+    font-size: 50px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+}
+
+.sectionOne .box-text h1 {
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    font-style:normal;
+    text-align: center;
+    padding: 5px 0 40px 0;
+}
+
+.sectionOne .box-text a {
+    padding: 20px 45px;
+    background-color: #FFC800;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin: auto;
+}
+
+.sectionTwo {
+    width: 100%;
+    height: 60vh;
+}
+
+.sectionTwo .boxes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.sectionTwo .BoxOne {
+    width: 25%;
+}
+
+.sectionTwo .boxes .BoxOne i{
+    padding: 40px 40px;
+    background-color:#FFC800;
+    border-radius: 100%;
+    font-size: 65px;
+    color: white;
+}
+
+.sectionTwo h1 {
+    text-align: center;
+    padding: 40px 0 25px 0;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.sectionTwo h4 {
+    text-align: center;
+    padding: 0 0 30px 0;
+    font-weight: lighter;
+    font-size: 20px;
+    font-style: italic;
+
+}
+
+.sectionThree {
+    width: 100%;
+    height: 160vh;
+background-color: rgb(241, 241, 241);
+}
+
+.sectionThree h1 {
+text-align: center;
+font-weight: bold;
+font-size: 30px;
+padding: 40px 0;
+}
+
+.sectionThree h4 {
+    text-align: center;
+    padding: 0 0 25px 0;
+    color: rgb(167, 167, 167);
+
+}
+
+.sectionThree .boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+}
+
+.sectionThree .boxes .boxOne {
+    width: 30%;
+    height: 33%;
+    position: relative;
+    
+}
+
+.sectionThree .boxes .boxOne img {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sectionThree .boxes .boxOne .word {
+    
+    height: 20vh;
+    
+}
+
+.sectionThree .boxes .boxOne .word h3 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.sectionThree .boxes .boxOne .word h5 {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    color: rgb(178, 178, 178);
+}
+
+.sectionThree .boxes  .boxOne .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0;
+    background-color: #ffc800df;
+    transition: 0.3s ease-in-out;
+
+}
+
+.sectionThree .boxes .boxOne .overlay h1 {
+    font-size: 150px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.sectionThree .boxes .boxOne:hover .overlay {
+    opacity: 0.9;
+}
+
+.sectionFour {
+    width: 100%;
+}
+
+.sectionFour .boxes {
+    position: relative;
+}
+
+.sectionFour h1 {
+    font-weight: bold;
+    font-size: 30px;
+    padding: 30px;
+    text-align: center;
+}
+
+.sectionFour h3 {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+    padding: 20px 0;
+}
+.sectionFour .boxes .boxOne {
+    width: 80%;
+    height: 30vh;
+    display: flex;
+}
+
+.sectionFour .boxes .boxOne .textbox{
+    text-align: end;
+    width: 60%;
+    height: 20vh;
+}
+
+.sectionFour .boxes .boxOne .Img {
+    width: 20%;
+
+}
+
+.sectionFour .boxes .boxOne .Img-right{
+    width: 50%;
+}
+.sectionFour .boxes .boxOne img {
+    
+    margin-left: 20px;
+}
+
+.sectionFour .boxes .boxOne .Img img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(210, 210, 210);
+
+}
+
+.sectionFour .boxes .boxOne2-4 {
+    width: 80%;
+    height: 30vh;
+    display: flex;
+    position: relative;
+}
+
+ .sectionFour .boxes .boxOne2-4 .Img {
+     width: 50%;
+     position: absolute;
+     left: 62%; 
+     
+
+     
+ }
+
+.sectionFour .boxes .boxOne2-4 .Img img {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(210, 210, 210);
+    
+    }
+
+    .sectionFour .boxes .boxOne2-4 .textbox {
+        text-align: start;
+        width: 50%;
+        position: absolute;
+        left: 75%;
+    }
+
+.sectionFour .boxes .circle {
+    width: 10%;
+    margin-left: 50%;
+
+}
+
+    .sectionFour .boxes .circle h4{
+        background-color: #FFC800;
+        border-radius: 50%;
+        padding: 32px 30px;
+        color: white;
+        border: solid rgb(192, 190, 190);
+        text-align: center;
+        font-weight: bold;
+        font-size: 19px;
+    }
+
+.sectionFive {
+    width: 100%;
+    height: 80vh;
+    margin-bottom: 100px;
+    background-color: rgb(241, 239, 239);
+}
+
+.sectionFive h1 {
+    font-size: 30px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.sectionFive p {
+    text-align: center;
+    padding: 0 0 20px 0;
+
+}
+
+.sectionFive .boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sectionFive .boxes .boxOne {
+    
+    height: 20vh;
+}
+
+.sectionFive .boxes .boxOne img {
+border-radius: 50%;
+width: 200px;
+height: 200px;
+border: solid rgb(219, 217, 217);
+border-width: thick;
+display: flex;
+justify-content: center;
+}
+
+.sectionFive .boxes .boxOne h3 {
+padding: 10px 0;
+font-weight: bold;
+text-align: center;
+font-size: 30px;
+
+}
+
+.sectionFive .boxes .boxOne h5 {
+    padding: 10px 0;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(215, 211, 211);
+    
+    }
+
+.sectionFive .boxes .boxOne .logo {
+    text-align: center;
+}
+
+    .sectionFive .boxes .boxOne .logo i{
+        padding: 10px 10px;
+        background-color: #212529;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        border: none;
+    }
+    
+    .sectionSix {
+        width: 100%;
+        height: 20vh;
+    }
+
+    .sectionSix .box img {
+        width: 200px;
+        height: 100px;
+    }
+
+.sectionSix .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sectionSeven {
+    width: 100%;
+    height: 110vh;
+    background-image: url(../image/map-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: black;
+}
+
+.sectionSeven h1 {
+    padding: 70px 0 15px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sectionSeven p {
+    color: rgb(199, 198, 198);
+}
+
+.sectionSeven .boxInput {
+    text-align: center;
+    height: 40vh;
+}
+
+.sectionSeven .boxInput input {
+    border-radius: 5px;
+    padding: 25px 100px;
+    margin-top: 55px;
+    text-align: start;
+    width: 50%;
+    border: none;
+}
+
+.sectionSeven .textarea {
+    margin-top: 55px;
+    height: 20vh;
+    width: 30%;
+    text-align: start;
+    position: absolute;
+    left: 850px;
+    
+}
+
+.sectionSeven .textarea textarea {
+    border-radius: 10px;
+    border: 1px solid;
+    
+}
+
+.sectionSeven .boxes {
+    display: flex; 
+    flex-wrap: wrap;   
+    position: relative;
+}
+
+.sectionSeven .endbutton {
+    width: 60px;
+    height: 40px;
+    margin: 15% 0 5% 45%;
+    position: relative;
+}
+
+.sectionSeven .endbutton button {
+    text-align: center;    
+    color: white;
+    padding: 15px 90px;
+    border-radius: 7px;
+    border: none;
+    background-color: #FFC800;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+    
+
+}
+
+.sectionSeven .endbutton .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ffc80052;   
+
+}
+
+.sectionFour .boxes  hr{
+    display: inline;
+    height: 770px;
+    left: 54.5%;
+    top: 13.5%;
+    background-color: rgb(210, 210, 210);
+    position: absolute;
+    width: 5px;
+    z-index: -1;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
